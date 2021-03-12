@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block content %}
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        #circle1 {
+            background-image: url('https://modo-phinf.pstatic.net/20210128_250/1611840761659JrHuN_JPEG/mosa1v2N3W.jpeg?type=w720');
+            width:150px;
+            height:150px;
+            border-radius:75px;
+            text-align:center;
+            margin: 30px;;
+            font-size:12px;
+            vertical-align:middle;
+            }
+        #modified{
+            text-align: right;
+        }
+    </style>
+</head>
+<body onload="test()">
+<canvas id='circle1'></canvas>
+<div id='modified'>
+    <a href="{{ url_for('mypage.create') }}" class="btn btn-primary">수정하기</a>
+</div>
+</body>
+{% endblock %}
